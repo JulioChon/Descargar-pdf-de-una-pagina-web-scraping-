@@ -60,7 +60,7 @@ const path = require('path');
                 if (match) {
                     const date = match[1];
                     const pdfName = `${date}.pdf`;
-                    const pdfPath = path.resolve(__dirname, pdfName);
+                    const pdfPath = path.resolve(__dirname, 'historic', pdfName);
                     fs.writeFileSync(pdfPath, response.data);
                 }
 
